@@ -9,7 +9,7 @@ RUN apk upgrade
 # required nginx 
 RUN apk add --no-cache \
  gcc make linux-headers musl-dev \
- zlib-dev zlib-static python3-dev 
+ zlib-dev zlib-static python3-dev \
  curl g++ git screen patch tar \
  lzip xz wget2 gettext-dev rsync bash
 
