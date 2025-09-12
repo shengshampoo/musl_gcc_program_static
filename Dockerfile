@@ -14,5 +14,7 @@ RUN apk add --no-cache \
  lzip xz wget2 gettext-dev rsync bash
 
 COPY build-static-muslgcc.sh build-static-muslgcc.sh
+COPY config.mak.2.musl config.mak.2.musl
+COPY config.mak.3.musl config.mak.3.musl
 RUN chmod +x ./build-static-muslgcc.sh
 RUN bash ./build-static-muslgcc.sh
