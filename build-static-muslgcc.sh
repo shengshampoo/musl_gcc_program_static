@@ -19,7 +19,7 @@ mv /usr/local/$(uname -m)-linux-musl-cross-stage0/$(uname -m)-linux-musl/lib/lib
 ln -sf /usr/local/$(uname -m)-linux-musl-cross-stage0/$(uname -m)-linux-musl/lib/libstdc++.a /usr/local/$(uname -m)-linux-musl-cross-stage0/$(uname -m)-linux-musl/lib/libstdc++.so
 make clean
 cp /config.mak.2.musl config.mak
-make profiledbootstrap
+make
 make install
 
 cd /usr/local
