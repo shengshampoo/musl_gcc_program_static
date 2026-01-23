@@ -50,4 +50,4 @@ SUBARCH := $(shell uname -m)
 TARGET = $(SUBARCH)-linux-musl
 OUTPUT = /usr/local/$(SUBARCH)-linux-musl-cross-stage0
 GCC_CONFIG += --enable-languages=c,c++,fortran
-DL_CMD = wget2 -c -O
+DL_CMD = wget -c -O
