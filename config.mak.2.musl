@@ -58,4 +58,4 @@ LINUX_HEADERS_SITE = https://ftp.barfooze.de/pub/sabotage/tarballs/
 TARGET = $(SUBARCH)-linux-musl
 OUTPUT = /usr/local/$(SUBARCH)-linux-musl-cross
 GCC_CONFIG += --enable-languages=c,c++,fortran
-DL_CMD = wget -c -O
+DL_CMD = wget2 -c -O
