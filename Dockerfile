@@ -12,7 +12,8 @@ RUN apk add --no-cache \
  gcc make linux-headers musl-dev \
  zlib-dev zlib-static python3-dev \
  curl g++ git screen patch tar \
- lzip xz wget2 gettext-dev rsync bash
+ lzip xz gettext-dev rsync bash
+# wget2
 
 COPY build-static-muslgcc.sh build-static-muslgcc.sh
 COPY config.mak.2.musl config.mak.2.musl
