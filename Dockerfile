@@ -1,7 +1,8 @@
-FROM alpine:latest
+#FROM alpine:latest
+FROM bellsoft/alpaquita-linux-gcc:musl
 
 # https://mirrors.alpinelinux.org/
-RUN sed -i 's@dl-cdn.alpinelinux.org@ftp.halifax.rwth-aachen.de@g' /etc/apk/repositories
+#RUN sed -i 's@dl-cdn.alpinelinux.org@ftp.halifax.rwth-aachen.de@g' /etc/apk/repositories
 
 RUN apk update
 RUN apk upgrade
